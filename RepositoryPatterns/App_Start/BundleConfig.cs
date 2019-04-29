@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace RepositoryPattern
+namespace RepositoryPatterns
 {
     public class BundleConfig
     {

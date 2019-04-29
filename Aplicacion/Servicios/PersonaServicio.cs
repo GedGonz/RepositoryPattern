@@ -22,9 +22,9 @@ namespace Aplicacion.Servicios
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Persona> ListAll()
+        public List<Persona> ListAll()
         {
-            return personaDominio.ListaPerson();
+            return personaDominio.ListaPerson().ToList();
         }
 
         public IEnumerable<Persona> ListFiler(Expression<Func<Persona, bool>> predicado)

@@ -11,7 +11,7 @@ namespace Aplicacion.Contratos
     public interface IPersonaServicio
     {
         bool add(Persona entidad);
-        IEnumerable<Persona> ListAll();
+        List<Persona> ListAll();
         IEnumerable<Persona> ListFiler(Expression<Func<Persona, bool>> predicado);
     }
 }

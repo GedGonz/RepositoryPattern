@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace RepositoryPattern.Controllers
+namespace RepositoryPatterns.Controllers
 {
     public class HomeController : Controller
     {
@@ -16,6 +16,7 @@ namespace RepositoryPattern.Controllers
         }
         public ActionResult Index()
         {
+            var Data = personaServicio.ListAll();
             return View();
         }
 
